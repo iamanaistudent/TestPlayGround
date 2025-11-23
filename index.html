@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TestPlayground - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0b0f1a">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="index.html">TestPlayground</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h1>Welcome to TestPlayground</h1>
+      <p>This simple site is built for manual and automated Selenium testing practice.</p>
+
+      <button id="show-message" class="btn">Show Message</button>
+      <div id="home-message" class="message" aria-live="polite"></div>
+
+      <section class="context-section">
+        <h2>Right-Click Section</h2>
+        <div id="context-box" class="context-box">Right-Click Here</div>
+      </section>
+    </main>
+
+    <div id="custom-menu" class="custom-menu" role="menu" aria-hidden="true">
+      <ul>
+        <li class="menu-item">Edit</li>
+        <li class="menu-item">Delete</li>
+        <li class="menu-item">Refresh</li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

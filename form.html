@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TestPlayground - Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0b0f1a">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="index.html">TestPlayground</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h1>Form Page</h1>
+      <p>Use this simple form to test input validation in Selenium.</p>
+
+      <form id="test-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" />
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div id="form-message" class="message" aria-live="polite"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
